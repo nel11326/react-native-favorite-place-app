@@ -1,7 +1,7 @@
 import PlacesList from "../components/Places/PlacesList";
 
 function AllPlace() {
-  <PlacesList />;
+  return <PlacesList />;
 }
 
 export default AllPlace;
