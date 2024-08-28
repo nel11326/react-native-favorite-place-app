@@ -25,7 +25,10 @@ function Map({ navigation }) {
       Alert.alert("No location picked!, please pick a location on the map");
       return;
     }
-    navigation.navigate("AddPlace", { pickedLocation: selectedLocation });
+    navigation.navigate("AddPlace", {
+      pickedLat: selectedLocation.lat,
+      pickedLng: selectedLocation.lng,
+    });
   }, [navigation, selectedLocation]);
 
   useLayoutEffect(() => {
